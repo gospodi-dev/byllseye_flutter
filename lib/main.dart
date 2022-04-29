@@ -2,16 +2,9 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       title: 'Bullseye',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Bullseye'),
-        ),
-        body: const Center(
-          child: Text('Привет, Деревяшка!'),
-        ),
-      ),
+      home: GamePage(),
     ),
   );
 }
@@ -28,9 +21,13 @@ class _GamePageState extends State<GamePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: Column(
-        children: [],
-      )),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const <Widget>[
+            Text('Bullseye'),
+          ],
+        ),
+      ),
     );
   }
 }
