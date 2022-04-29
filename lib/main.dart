@@ -24,7 +24,13 @@ class _GamePageState extends State<GamePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const <Widget>[
-            Text('Bullseye'),
+            Text(
+              'Привет, Деревяшка!',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                color: Colors.green,
+              ),
+            ),
           ],
         ),
       ),
