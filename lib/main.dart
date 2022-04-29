@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -31,6 +33,10 @@ class _GamePageState extends State<GamePage> {
                 color: Colors.green,
               ),
             ),
+            TextButton(
+              onPressed: () {},
+              child: Text('Вдарь мне!', style: TextStyle(color: Colors.blue)),
+            )
           ],
         ),
       ),
