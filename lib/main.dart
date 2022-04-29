@@ -9,9 +9,28 @@ void main() {
           title: const Text('Bullseye'),
         ),
         body: const Center(
-          child: Text('Hello There!'),
+          child: Text('Привет, Деревяшка!'),
         ),
       ),
     ),
   );
+}
+
+class GamePage extends StatefulWidget {
+  const GamePage({Key? key}) : super(key: key);
+
+  @override
+  State<GamePage> createState() => _GamePageState();
+}
+
+class _GamePageState extends State<GamePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+          child: Column(
+        children: [],
+      )),
+    );
+  }
 }
