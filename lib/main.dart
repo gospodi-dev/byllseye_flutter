@@ -25,8 +25,8 @@ class _GamePageState extends State<GamePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            Text(
+          children: <Widget>[
+            const Text(
               'Привет, Деревяшка!',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -34,12 +34,17 @@ class _GamePageState extends State<GamePage> {
               ),
             ),
             TextButton(
-              onPressed: () {},
-              child: Text('Вдарь мне!', style: TextStyle(color: Colors.blue)),
-            )
+              onPressed: newMethod,
+              child: const Text('Вдарь мне!',
+                  style: TextStyle(color: Colors.blue)),
+            ),
           ],
         ),
       ),
     );
+  }
+
+  void newMethod() {
+    print('object!!!');
   }
 }
