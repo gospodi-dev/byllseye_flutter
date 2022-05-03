@@ -19,6 +19,8 @@ class GamePage extends StatefulWidget {
 }
 
 class _GamePageState extends State<GamePage> {
+  bool _alertIsVisible = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
