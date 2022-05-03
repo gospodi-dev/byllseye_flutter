@@ -19,7 +19,7 @@ class GamePage extends StatefulWidget {
 }
 
 class _GamePageState extends State<GamePage> {
-  bool _alertIsVisible = false;
+  var _alertIsVisible = false;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,9 @@ class _GamePageState extends State<GamePage> {
               ),
             ),
             TextButton(
-              onPressed: newMethod,
+              onPressed: () {
+                _alertIsVisible = true;
+              },
               child: const Text('Вдарь мне!',
                   style: TextStyle(color: Colors.blue)),
             ),
@@ -44,9 +46,5 @@ class _GamePageState extends State<GamePage> {
         ),
       ),
     );
-  }
-
-  void newMethod() {
-    print('object!!!');
   }
 }
