@@ -57,5 +57,18 @@ class _GamePageState extends State<GamePage> {
       },
       child: const Text('Awesome!'),
     );
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Hello there!'),
+          content: const Text('This is my first pop-up!'),
+          actions: [
+            okButton,
+          ],
+          elevation: 5,
+        );
+      },
+    );
   }
 }
