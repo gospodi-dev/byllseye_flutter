@@ -14,6 +14,7 @@ class Prompt extends StatelessWidget {
           'PUT THE BULLSEYE AS CLOSE AS YOU CAN TO',
           style: LabelTextStyle.bodyText1(context),
         ),
+        Text('$targetValue'),
       ],
     );
   }
