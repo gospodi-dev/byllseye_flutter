@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Prompt extends StatelessWidget {
-  const Prompt({Key? key}) : super(key: key);
+  const Prompt({Key? key, required this.targetValue}) : super(key: key);
 
   final int targetValue;
 
