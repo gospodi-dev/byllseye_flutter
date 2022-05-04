@@ -8,7 +8,9 @@ class Prompt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: <Widget>[],
+      children: <Widget>[
+        Text('PUT THE BULLSEYE AS CLOSE AS YOU CAN TO'),
+      ],
     );
   }
 }
