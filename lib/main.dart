@@ -47,4 +47,15 @@ class _GamePageState extends State<GamePage> {
       ),
     );
   }
+
+  void _showAlert(BuildContext context) {
+    var okButton = TextButton(
+      onPressed: () {
+        Navigator.of(context).pop();
+        _alertIsVisible = false;
+        print('Awesome pressed! $_alertIsVisible');
+      },
+      child: const Text('Awesome!'),
+    );
+  }
 }
