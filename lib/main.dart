@@ -38,6 +38,7 @@ class _GamePageState extends State<GamePage> {
             TextButton(
               onPressed: () {
                 _alertIsVisible = true;
+                _showAlert(context);
               },
               child: const Text('Вдарь мне!',
                   style: TextStyle(color: Colors.blue)),
