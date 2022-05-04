@@ -12,6 +12,15 @@ void main() {
   );
 }
 
+class BullsEyeApp extends StatelessWidget {
+  const BullsEyeApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+
 class GamePage extends StatefulWidget {
   const GamePage({Key? key}) : super(key: key);
 
