@@ -4,12 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 void main() {
-  runApp(
-    const MaterialApp(
-      title: 'Bullseye',
-      home: GamePage(),
-    ),
-  );
+  runApp(const BullsEyeApp());
 }
 
 class BullsEyeApp extends StatelessWidget {
@@ -17,7 +12,10 @@ class BullsEyeApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const MaterialApp(
+      title: 'Bullseye',
+      home: GamePage(),
+    );
   }
 }
 
