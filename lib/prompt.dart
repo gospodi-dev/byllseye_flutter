@@ -10,7 +10,10 @@ class Prompt extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Text('PUT THE BULLSEYE AS CLOSE AS YOU CAN TO'),
+        Text(
+          'PUT THE BULLSEYE AS CLOSE AS YOU CAN TO',
+          style: LabelTextStyle.bodyText1(context),
+        ),
       ],
     );
   }
