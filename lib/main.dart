@@ -12,6 +12,8 @@ class BullsEyeApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setPreferredOrientations(
+        [DeviceOrientation.landscapeLeft, DeviceOrientation.landscapeRight]);
     return const MaterialApp(
       title: 'Bullseye',
       home: GamePage(),
