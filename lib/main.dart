@@ -1,5 +1,7 @@
 // ignore_for_file: avoid_print
 
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'prompt.dart';
@@ -33,6 +35,14 @@ class GamePage extends StatefulWidget {
 }
 
 class _GamePageState extends State<GamePage> {
+  late GameModel _model;
+
+  @override
+  void initState() {
+    super.initState();
+    _model = GameModel(50);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
