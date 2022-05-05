@@ -14,7 +14,16 @@ class _ControlState extends State<Control> {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[],
+      children: <Widget>[
+        const Text('1'),
+        Slider(
+          value: _currentValue,
+          onChanged: (newValue) {},
+          min: 1.0,
+          max: 100.0,
+        ),
+        const Text('100'),
+      ],
     );
   }
 }
