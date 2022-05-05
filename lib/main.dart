@@ -38,7 +38,10 @@ class _GamePageState extends State<GamePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Prompt(targetValue: 100),
+            const Prompt(
+              targetValue: 100,
+            ),
+            const Control(),
             TextButton(
               onPressed: () {
                 _showAlert(context);
