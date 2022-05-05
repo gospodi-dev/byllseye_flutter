@@ -12,6 +12,9 @@ class _ControlState extends State<Control> {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[],
+    );
   }
 }
