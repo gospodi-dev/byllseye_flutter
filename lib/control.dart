@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'game_model.dart';
 
 class Control extends StatefulWidget {
-  const Control({Key? key}) : super(key: key);
+  const Control({Key? key, required this.model}) : super(key: key);
+
+  final GameModel model;
 
   @override
-  State<Control> createState() => _ControlState();
+  _ControlState createState() => _ControlState();
 }
 
 class _ControlState extends State<Control> {
