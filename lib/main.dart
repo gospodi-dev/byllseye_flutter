@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'prompt.dart';
 import 'control.dart';
+import 'score.dart';
 
 void main() {
   runApp(const BullsEyeApp());
@@ -48,6 +49,10 @@ class _GamePageState extends State<GamePage> {
               },
               child: const Text('Вдарь мне!',
                   style: TextStyle(color: Colors.blue)),
+            ),
+            const Score(
+              totalScore: 0,
+              round: 1,
             ),
           ],
         ),
