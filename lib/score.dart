@@ -16,10 +16,24 @@ class Score extends StatelessWidget {
           onPressed: () {},
           child: const Text('Start Over'),
         ),
-        const Text('Score:'),
-        const Text('9999'),
-        const Text('Round:'),
-        const Text('99'),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            children: const <Widget>[
+              Text('Score:'),
+              Text('9999'),
+            ],
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            children: const <Widget>[
+              Text('Round:'),
+              Text('99'),
+            ],
+          ),
+        ),
         TextButton(
           onPressed: () {},
           child: const Text('Info'),
