@@ -53,7 +53,7 @@ class _GamePageState extends State<GamePage> {
             const Prompt(
               targetValue: 100,
             ),
-            const Control(),
+            Control(model: _model),
             TextButton(
               onPressed: () {
                 _showAlert(context);
@@ -61,9 +61,9 @@ class _GamePageState extends State<GamePage> {
               child: const Text('Вдарь мне!',
                   style: TextStyle(color: Colors.blue)),
             ),
-            const Score(
-              totalScore: 0,
-              round: 1,
+            Score(
+              totalScore: _model.totalScore,
+              round: _model.round,
             ),
           ],
         ),
@@ -84,7 +84,7 @@ class _GamePageState extends State<GamePage> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text('Hello there!'),
-          content: const Text('This is my first pop-up!'),
+          content: Text('The slder\'s value is ${_model.current}'),
           actions: [
             okButton,
           ],
