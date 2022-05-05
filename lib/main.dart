@@ -49,6 +49,15 @@ class _GamePageState extends State<GamePage> {
               child: const Text('Вдарь мне!',
                   style: TextStyle(color: Colors.blue)),
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Start Over'),
+                )
+              ],
+            )
           ],
         ),
       ),
