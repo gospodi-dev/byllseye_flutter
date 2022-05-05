@@ -55,7 +55,11 @@ class _GamePageState extends State<GamePage> {
                 TextButton(
                   onPressed: () {},
                   child: const Text('Start Over'),
-                )
+                ),
+                const Text('Score:'),
+                const Text('9999'),
+                const Text('Round:'),
+                const Text('99'),
               ],
             )
           ],
