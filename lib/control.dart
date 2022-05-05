@@ -8,6 +8,8 @@ class Control extends StatefulWidget {
 }
 
 class _ControlState extends State<Control> {
+  var _currentValue = 50.0;
+
   @override
   Widget build(BuildContext context) {
     return Container();
