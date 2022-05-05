@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'prompt.dart';
+import 'control.dart';
 
 void main() {
   runApp(const BullsEyeApp());
