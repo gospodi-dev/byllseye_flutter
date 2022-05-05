@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'prompt.dart';
 import 'control.dart';
 import 'score.dart';
+import 'game_model.dart';
 
 void main() {
   runApp(const BullsEyeApp());
