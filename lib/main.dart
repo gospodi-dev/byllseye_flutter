@@ -60,6 +60,10 @@ class _GamePageState extends State<GamePage> {
                 const Text('9999'),
                 const Text('Round:'),
                 const Text('99'),
+                TextButton(
+                  onPressed: () {},
+                  child: const Text('Info'),
+                ),
               ],
             )
           ],
