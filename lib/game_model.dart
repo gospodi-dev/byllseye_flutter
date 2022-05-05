@@ -1,4 +1,9 @@
 class GameModel {
+  GameModel(this.target,
+      [this.current = sliderStart,
+      this.round = scoreStart,
+      this.totalScore = roundStart]);
+
   static const sliderStart = 50;
   static const scoreStart = 0;
   static const roundStart = 1;
