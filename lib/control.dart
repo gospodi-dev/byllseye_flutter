@@ -18,7 +18,12 @@ class _ControlState extends State<Control> {
         const Text('1'),
         Slider(
           value: _currentValue,
-          onChanged: (newValue) {},
+          onChanged: (newValue) {
+            setState(() {
+              _currentValue = newValue;
+              print(_currentValue);
+            });
+          },
           min: 1.0,
           max: 100.0,
         ),
