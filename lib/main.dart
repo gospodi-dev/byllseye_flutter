@@ -82,6 +82,7 @@ class _GamePageState extends State<GamePage> {
     } else {
       difference = 0;
     }
+    return maximumScore - difference;
   }
 
   void _showAlert(BuildContext context) {
