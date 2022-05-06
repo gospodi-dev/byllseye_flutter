@@ -72,6 +72,10 @@ class _GamePageState extends State<GamePage> {
     );
   }
 
+  int _pointForCurrentRound() {
+    return 999;
+  }
+
   void _showAlert(BuildContext context) {
     var okButton = TextButton(
       onPressed: () {
@@ -85,7 +89,8 @@ class _GamePageState extends State<GamePage> {
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text('Hello there!'),
-          content: Text('The slder\'s value is ${_model.current}'),
+          content: Text('The slder\'s value is ${_model.current}.\n'
+              'You scored ${_pointForCurrentRound()} points this round.'),
           actions: [
             okButton,
           ],
