@@ -51,8 +51,8 @@ class _GamePageState extends State<GamePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Prompt(
-              targetValue: 100,
+            Prompt(
+              targetValue: _model.target,
             ),
             Control(model: _model),
             TextButton(
