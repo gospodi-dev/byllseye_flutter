@@ -41,7 +41,7 @@ class _GamePageState extends State<GamePage> {
   @override
   void initState() {
     super.initState();
-    _model = GameModel(Random().nextInt(100));
+    _model = GameModel(Random().nextInt(100) + 1);
   }
 
   @override
