@@ -73,7 +73,8 @@ class _GamePageState extends State<GamePage> {
   }
 
   int _pointForCurrentRound() {
-    return 999;
+    const int maximumScore = 100;
+    int difference;
   }
 
   void _showAlert(BuildContext context) {
