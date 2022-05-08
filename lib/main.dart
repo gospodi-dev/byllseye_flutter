@@ -58,6 +58,10 @@ class _GamePageState extends State<GamePage> {
             TextButton(
               onPressed: () {
                 _showAlert(context);
+                setState(() {
+                  _model.totalScore =
+                      _model.totalScore + _pointForCurrentRound();
+                });
               },
               child: const Text('Вдарь мне!',
                   style: TextStyle(color: Colors.blue)),
