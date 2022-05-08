@@ -85,7 +85,6 @@ class _GamePageState extends State<GamePage> {
     var okButton = TextButton(
       onPressed: () {
         Navigator.of(context).pop();
-        print('Awesome pressed!');
       },
       child: const Text('Awesome!'),
     );
