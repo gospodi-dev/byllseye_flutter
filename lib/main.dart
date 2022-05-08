@@ -58,10 +58,6 @@ class _GamePageState extends State<GamePage> {
             TextButton(
               onPressed: () {
                 _showAlert(context);
-                setState(() {
-                  _model.totalScore += _pointForCurrentRound();
-                  _model.target = Random().nextInt(100) + 1;
-                });
               },
               child: const Text('Вдарь мне!',
                   style: TextStyle(color: Colors.blue)),
@@ -86,6 +82,10 @@ class _GamePageState extends State<GamePage> {
     var okButton = TextButton(
       onPressed: () {
         Navigator.of(context).pop();
+        setState(() {
+          _model.totalScore += _pointForCurrentRound();
+          _model.target = Random().nextInt(100) + 1;
+        });
       },
       child: const Text('Awesome!'),
     );
