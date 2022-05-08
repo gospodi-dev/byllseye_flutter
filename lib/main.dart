@@ -59,8 +59,7 @@ class _GamePageState extends State<GamePage> {
               onPressed: () {
                 _showAlert(context);
                 setState(() {
-                  _model.totalScore =
-                      _model.totalScore + _pointForCurrentRound();
+                  _model.totalScore += _pointForCurrentRound();
                 });
               },
               child: const Text('Вдарь мне!',
