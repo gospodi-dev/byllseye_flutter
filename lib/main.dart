@@ -85,6 +85,7 @@ class _GamePageState extends State<GamePage> {
         setState(() {
           _model.totalScore += _pointForCurrentRound();
           _model.target = Random().nextInt(100) + 1;
+          _model.round += 1;
         });
       },
       child: const Text('Awesome!'),
