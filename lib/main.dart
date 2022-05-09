@@ -80,6 +80,16 @@ class _GamePageState extends State<GamePage> {
 
   String _alertTitle() {
     var difference = (_model.target - _model.current).abs();
+    String title;
+    if (difference == 0) {
+      title = 'Великолепно!';
+    } else if (difference < 5) {
+      title = 'Ты почти угадал!';
+    } else if (difference < 10) {
+      title = 'Не плохо.';
+    } else {
+      title = 'Может попробуешь ещё?';
+    }
   }
 
   void _showAlert(BuildContext context) {
