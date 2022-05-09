@@ -78,6 +78,10 @@ class _GamePageState extends State<GamePage> {
     return maximumScore - difference;
   }
 
+  String _alertTitle() {
+    var difference = (_model.target - _model.current).abs();
+  }
+
   void _showAlert(BuildContext context) {
     var okButton = TextButton(
       onPressed: () {
