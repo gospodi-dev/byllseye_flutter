@@ -109,7 +109,7 @@ class _GamePageState extends State<GamePage> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text('Hello there!'),
+          title: Text(_alertTitle()),
           content: Text('The slder\'s value is ${_model.current}.\n'
               'You scored ${_pointForCurrentRound()} points this round.'),
           actions: [
