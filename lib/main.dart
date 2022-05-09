@@ -74,12 +74,12 @@ class _GamePageState extends State<GamePage> {
 
   int _pointForCurrentRound() {
     const maximumScore = 100;
-    var difference = (_model.target - _model.current).abs();
+    var difference = _differenceAmount();
     return maximumScore - difference;
   }
 
   String _alertTitle() {
-    var difference = (_model.target - _model.current).abs();
+    var difference = _differenceAmount();
     String title;
     if (difference == 0) {
       title = 'Великолепно!';
@@ -92,6 +92,8 @@ class _GamePageState extends State<GamePage> {
     }
     return title;
   }
+
+  int _differenceAmount() => (_model.target - _model.current).abs();
 
   void _showAlert(BuildContext context) {
     var okButton = TextButton(
