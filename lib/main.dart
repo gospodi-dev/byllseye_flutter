@@ -90,6 +90,7 @@ class _GamePageState extends State<GamePage> {
     } else {
       title = 'Может попробуешь ещё?';
     }
+    return title;
   }
 
   void _showAlert(BuildContext context) {
