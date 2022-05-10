@@ -104,6 +104,15 @@ class _GamePageState extends State<GamePage> {
 
   int _newTargetValue() => Random().nextInt(100) + 1;
 
+  void _startNewGame() {
+    setState(() {
+      _model.totalScore = GameModel.scoreStart;
+      _model.round = GameModel.roundStart;
+      _model.current = GameModel.sliderStart;
+      _model.target = _newTargetValue();
+    });
+  }
+
   void _showAlert(BuildContext context) {
     var okButton = TextButton(
       onPressed: () {
