@@ -66,6 +66,7 @@ class _GamePageState extends State<GamePage> {
             Score(
               totalScore: _model.totalScore,
               round: _model.round,
+              onStartOver: _startNewGame,
             ),
           ],
         ),
