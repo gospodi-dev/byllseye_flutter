@@ -20,8 +20,10 @@ class Score extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         TextButton(
-          onPressed: () {},
           child: const Text('Start Over'),
+          onPressed: () {
+            onStartOver();
+          },
         ),
         Padding(
           padding: const EdgeInsets.all(8.0),
