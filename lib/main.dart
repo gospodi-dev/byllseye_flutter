@@ -81,7 +81,7 @@ class _GamePageState extends State<GamePage> {
     } else if (difference == 1) {
       bonus = 50;
     }
-    return maximumScore - difference;
+    return maximumScore - difference + bonus;
   }
 
   String _alertTitle() {
