@@ -76,6 +76,11 @@ class _GamePageState extends State<GamePage> {
     var bonus = 0;
     const maximumScore = 100;
     var difference = _differenceAmount();
+    if (difference == 0) {
+      bonus = 100;
+    } else if (difference == 1) {
+      bonus = 50;
+    }
     return maximumScore - difference;
   }
 
