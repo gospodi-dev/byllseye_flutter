@@ -20,7 +20,7 @@ class Score extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         TextButton(
-          child: const Text('Start Over'),
+          child: const Text('Начать заново'),
           onPressed: () {
             onStartOver();
           },
@@ -29,7 +29,7 @@ class Score extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Row(
             children: <Widget>[
-              const Text('Score:'),
+              const Text('Рекорд:'),
               Text('$totalScore'),
             ],
           ),
@@ -38,14 +38,14 @@ class Score extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: Row(
             children: <Widget>[
-              const Text('Round:'),
+              const Text('Раунд:'),
               Text('$round'),
             ],
           ),
         ),
         TextButton(
           onPressed: () {},
-          child: const Text('Info'),
+          child: const Text('Инфо'),
         ),
       ],
     );
