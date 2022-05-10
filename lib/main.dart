@@ -73,6 +73,7 @@ class _GamePageState extends State<GamePage> {
   }
 
   int _pointForCurrentRound() {
+    var bonus = 0;
     const maximumScore = 100;
     var difference = _differenceAmount();
     return maximumScore - difference;
