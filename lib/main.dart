@@ -42,7 +42,7 @@ class _GamePageState extends State<GamePage> {
   @override
   void initState() {
     super.initState();
-    _model = GameModel(Random().nextInt(100) + 1);
+    _model = GameModel(_newTargetValue());
   }
 
   @override
@@ -110,7 +110,7 @@ class _GamePageState extends State<GamePage> {
         Navigator.of(context).pop();
         setState(() {
           _model.totalScore += _pointForCurrentRound();
-          _model.target = Random().nextInt(100) + 1;
+          _model.target = _newTargetValue();
           _model.round += 1;
         });
       },
