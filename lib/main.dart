@@ -1,5 +1,6 @@
 // ignore_for_file: avoid_print
 
+// ignore: unused_import
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
@@ -100,6 +101,8 @@ class _GamePageState extends State<GamePage> {
   }
 
   int _differenceAmount() => (_model.target - _model.current).abs();
+
+  int _newTargetValue() => Random().nextInt(100) + 1;
 
   void _showAlert(BuildContext context) {
     var okButton = TextButton(
