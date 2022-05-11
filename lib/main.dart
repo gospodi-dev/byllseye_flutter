@@ -47,28 +47,31 @@ class _GamePageState extends State<GamePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Prompt(
-              targetValue: _model.target,
-            ),
-            Control(model: _model),
-            TextButton(
-              onPressed: () {
-                _showAlert(context);
-              },
-              child: const Text('Вдарь мне!',
-                  style: TextStyle(color: Colors.blue)),
-            ),
-            Score(
-              totalScore: _model.totalScore,
-              round: _model.round,
-              onStartOver: _startNewGame,
-            ),
-          ],
+    return Container(
+      decoration: const BoxDecoration(),
+      child: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Prompt(
+                targetValue: _model.target,
+              ),
+              Control(model: _model),
+              TextButton(
+                onPressed: () {
+                  _showAlert(context);
+                },
+                child: const Text('Вдарь мне!',
+                    style: TextStyle(color: Colors.blue)),
+              ),
+              Score(
+                totalScore: _model.totalScore,
+                round: _model.round,
+                onStartOver: _startNewGame,
+              ),
+            ],
+          ),
         ),
       ),
     );
