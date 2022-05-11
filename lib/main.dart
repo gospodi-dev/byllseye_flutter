@@ -55,6 +55,7 @@ class _GamePageState extends State<GamePage> {
             fit: BoxFit.cover,
           )),
       child: Scaffold(
+        backgroundColor: Colors.transparent,
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
