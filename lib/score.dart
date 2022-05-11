@@ -35,7 +35,10 @@ class Score extends StatelessWidget {
                 'Рекорд:',
                 style: LabelTextStyle.bodyText1(context),
               ),
-              Text('$totalScore'),
+              Text(
+                '$totalScore',
+                style: ScoreNumberTextStyle.headline4(context),
+              ),
             ],
           ),
         ),
