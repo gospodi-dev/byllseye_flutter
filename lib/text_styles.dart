@@ -20,3 +20,13 @@ class ScoreNumberTextStyle {
         );
   }
 }
+
+class TargetTextStyle {
+  static TextStyle? bodyText1(BuildContext context) {
+    return Theme.of(context).textTheme.bodyText1?.copyWith(
+          fontWeight: FontWeight.bold,
+          fontSize: 32.0,
+          color: Colors.black,
+        );
+  }
+}
