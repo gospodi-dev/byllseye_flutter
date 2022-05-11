@@ -28,7 +28,7 @@ class Score extends StatelessWidget {
           },
         ),
         Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.only(left: 32.0, right: 32.0),
           child: Row(
             children: <Widget>[
               const Text('Рекорд:'),
