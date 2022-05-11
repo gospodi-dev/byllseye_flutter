@@ -43,11 +43,17 @@ class Score extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
+          padding: const EdgeInsets.only(left: 32.0, right: 32.0),
+          child: Column(
             children: <Widget>[
-              const Text('Раунд:'),
-              Text('$round'),
+              Text(
+                'Раунд:',
+                style: LabelTextStyle.bodyText1(context),
+              ),
+              Text(
+                '$round',
+                style: ScoreNumberTextStyle.headline4(context),
+              ),
             ],
           ),
         ),
