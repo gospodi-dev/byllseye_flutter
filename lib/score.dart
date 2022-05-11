@@ -1,6 +1,8 @@
+// ignore: unused_import
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'text_styles.dart';
 
 class Score extends StatelessWidget {
   const Score(
