@@ -48,7 +48,12 @@ class _GamePageState extends State<GamePage> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(),
+      decoration: const BoxDecoration(
+          color: Colors.white,
+          image: DecorationImage(
+            image: AssetImage('images/background.png'),
+            fit: BoxFit.cover,
+          )),
       child: Scaffold(
         body: Center(
           child: Column(
