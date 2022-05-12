@@ -19,6 +19,10 @@ class StyleButton extends StatelessWidget {
           color: Colors.white,
         ),
       ),
+      onPressed: onPressed,
+      shape: const CircleBorder(
+        side: BorderSide(color: Colors.white),
+      ),
     );
   }
 }
