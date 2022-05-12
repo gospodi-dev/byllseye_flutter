@@ -13,6 +13,7 @@ import 'package:flutter/material.dart'
         VoidCallback,
         Widget;
 import 'text_styles.dart';
+import 'styled_button.dart';
 
 class Score extends StatelessWidget {
   const Score(
