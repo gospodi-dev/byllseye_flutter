@@ -9,6 +9,21 @@ class HitMeButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return RawMaterialButton(
+      fillColor: Colors.red[700],
+      splashColor: Colors.redAccent,
+      child: Padding(
+        padding: const EdgeInsets.all(14.0),
+        child: Text(
+          text,
+          maxLines: 1,
+          style: const TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 2.0),
+        ),
+      ),
+      onPressed: () {},
+    );
   }
 }
