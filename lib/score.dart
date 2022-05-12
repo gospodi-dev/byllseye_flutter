@@ -69,10 +69,10 @@ class Score extends StatelessWidget {
             ],
           ),
         ),
-        TextButton(
+        StyledButton(
+          icon: Icons.info,
           onPressed: () {},
-          child: const Text('Инфо'),
-        ),
+        )
       ],
     );
   }
