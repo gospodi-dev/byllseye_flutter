@@ -3,6 +3,7 @@ import 'package:flutter/material.dart'
         BuildContext,
         Column,
         EdgeInsets,
+        Expanded,
         Icons,
         Key,
         MainAxisAlignment,
@@ -13,6 +14,7 @@ import 'package:flutter/material.dart'
         TextButton,
         VoidCallback,
         Widget;
+import 'package:flutter/src/widgets/container.dart';
 import 'text_styles.dart';
 import 'styled_button.dart';
 
@@ -54,19 +56,21 @@ class Score extends StatelessWidget {
             ],
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 32.0, right: 32.0),
-          child: Column(
-            children: <Widget>[
-              Text(
-                'Раунд:',
-                style: LabelTextStyle.bodyText1(context),
-              ),
-              Text(
-                '$round',
-                style: ScoreNumberTextStyle.headline4(context),
-              ),
-            ],
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.only(left: 32.0, right: 32.0),
+            child: Column(
+              children: <Widget>[
+                Text(
+                  'Раунд:',
+                  style: LabelTextStyle.bodyText1(context),
+                ),
+                Text(
+                  '$round',
+                  style: ScoreNumberTextStyle.headline4(context),
+                ),
+              ],
+            ),
           ),
         ),
         StyledButton(
