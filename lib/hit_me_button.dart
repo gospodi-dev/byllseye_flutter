@@ -23,7 +23,11 @@ class HitMeButton extends StatelessWidget {
               letterSpacing: 2.0),
         ),
       ),
-      onPressed: () {},
+      onPressed: onPressed,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12.0),
+        side: const BorderSide(color: Colors.white),
+      ),
     );
   }
 }
