@@ -30,6 +30,7 @@ import 'prompt.dart';
 import 'control.dart';
 import 'score.dart';
 import 'game_model.dart';
+import 'hit_me_button.dart';
 
 void main() {
   runApp(const BullsEyeApp());
@@ -85,13 +86,11 @@ class _GamePageState extends State<GamePage> {
                 targetValue: _model.target,
               ),
               Control(model: _model),
-              TextButton(
-                onPressed: () {
-                  _showAlert(context);
-                },
-                child: const Text('Вдарь мне!',
-                    style: TextStyle(color: Colors.blue)),
-              ),
+              HitMeButton(
+                  text: 'Вдарь мне!',
+                  onPressed: () {
+                    _showAlert(context);
+                  }),
               Score(
                 totalScore: _model.totalScore,
                 round: _model.round,
