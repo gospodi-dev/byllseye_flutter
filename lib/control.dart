@@ -24,15 +24,18 @@ class _ControlState extends State<Control> {
           ),
         ),
         Expanded(
-          child: Slider(
-            value: widget.model.current.toDouble(),
-            onChanged: (newValue) {
-              setState(() {
-                widget.model.current = newValue.toInt();
-              });
-            },
-            min: 1.0,
-            max: 100.0,
+          child: SliderTheme(
+            data: SliderTheme.of(context).copyWith(),
+            child: Slider(
+              value: widget.model.current.toDouble(),
+              onChanged: (newValue) {
+                setState(() {
+                  widget.model.current = newValue.toInt();
+                });
+              },
+              min: 1.0,
+              max: 100.0,
+            ),
           ),
         ),
         const Padding(
