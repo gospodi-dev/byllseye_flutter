@@ -1,9 +1,29 @@
-// ignore_for_file: avoid_print
-
-// ignore: unused_import
-import 'dart:ffi';
-
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'
+    show
+        AlertDialog,
+        AssetImage,
+        BoxDecoration,
+        BoxFit,
+        BuildContext,
+        Center,
+        Colors,
+        Column,
+        Container,
+        DecorationImage,
+        Key,
+        MainAxisAlignment,
+        MaterialApp,
+        Navigator,
+        Scaffold,
+        State,
+        StatefulWidget,
+        StatelessWidget,
+        Text,
+        TextButton,
+        TextStyle,
+        Widget,
+        runApp,
+        showDialog;
 import 'package:flutter/services.dart';
 import 'dart:math';
 import 'prompt.dart';

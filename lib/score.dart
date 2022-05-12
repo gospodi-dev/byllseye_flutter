@@ -1,7 +1,17 @@
-// ignore: unused_import
-import 'dart:ffi';
-
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'
+    show
+        BuildContext,
+        Column,
+        EdgeInsets,
+        Key,
+        MainAxisAlignment,
+        Padding,
+        Row,
+        StatelessWidget,
+        Text,
+        TextButton,
+        VoidCallback,
+        Widget;
 import 'text_styles.dart';
 
 class Score extends StatelessWidget {
