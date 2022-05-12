@@ -12,6 +12,13 @@ class StyleButton extends StatelessWidget {
     return RawMaterialButton(
       fillColor: Colors.black,
       splashColor: Colors.redAccent,
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Icon(
+          icon,
+          color: Colors.white,
+        ),
+      ),
     );
   }
 }
