@@ -25,7 +25,10 @@ class _ControlState extends State<Control> {
         ),
         Expanded(
           child: SliderTheme(
-            data: SliderTheme.of(context).copyWith(),
+            data: SliderTheme.of(context).copyWith(
+              activeTrackColor: Colors.red[700],
+              inactiveTrackColor: Colors.red[700],
+            ),
             child: Slider(
               value: widget.model.current.toDouble(),
               onChanged: (newValue) {
