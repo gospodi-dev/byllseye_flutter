@@ -10,6 +10,7 @@ import 'package:flutter/material.dart'
         Column,
         Container,
         DecorationImage,
+        Icons,
         Key,
         MainAxisAlignment,
         MaterialApp,
@@ -31,6 +32,7 @@ import 'control.dart';
 import 'score.dart';
 import 'game_model.dart';
 import 'hit_me_button.dart';
+import 'styled_button.dart';
 
 void main() {
   runApp(const BullsEyeApp());
@@ -144,7 +146,8 @@ class _GamePageState extends State<GamePage> {
   }
 
   void _showAlert(BuildContext context) {
-    var okButton = TextButton(
+    var okButton = StyledButton(
+      icon: Icons.close,
       onPressed: () {
         Navigator.of(context).pop();
         setState(() {
@@ -153,7 +156,6 @@ class _GamePageState extends State<GamePage> {
           _model.round += 1;
         });
       },
-      child: const Text('Потрясающе!'),
     );
     showDialog(
       context: context,
