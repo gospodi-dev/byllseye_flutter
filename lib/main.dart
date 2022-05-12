@@ -153,15 +153,15 @@ class _GamePageState extends State<GamePage> {
           _model.round += 1;
         });
       },
-      child: const Text('Awesome!'),
+      child: const Text('Потрясающе!'),
     );
     showDialog(
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
           title: Text(_alertTitle()),
-          content: Text('The slder\'s value is ${_model.current}.\n'
-              'You scored ${_pointForCurrentRound()} points this round.'),
+          content: Text('Значение ползунка равно ${_model.current}.\n'
+              'Вы набрали ${_pointForCurrentRound()} очков в этом раунде.'),
           actions: [
             okButton,
           ],
