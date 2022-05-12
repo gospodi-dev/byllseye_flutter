@@ -3,6 +3,7 @@ import 'package:flutter/material.dart'
         BuildContext,
         Column,
         EdgeInsets,
+        Icons,
         Key,
         MainAxisAlignment,
         Padding,
@@ -32,11 +33,9 @@ class Score extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        TextButton(
-          child: const Text('Начать заново'),
-          onPressed: () {
-            onStartOver();
-          },
+        StyledButton(
+          icon: Icons.refresh,
+          onPressed: () {},
         ),
         Padding(
           padding: const EdgeInsets.only(left: 32.0, right: 32.0),
