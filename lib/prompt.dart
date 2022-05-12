@@ -11,7 +11,7 @@ class Prompt extends StatelessWidget {
     return Column(
       children: <Widget>[
         Text(
-          'PUT THE BULLSEYE AS CLOSE AS YOU CAN TO',
+          'ПОСТАВЬТЕ ЗНАЧЕНИЕ СЛАЙДЕРА КАК МОЖНО БЛИЖЕ К ЦЕЛИ',
           style: LabelTextStyle.bodyText1(context),
         ),
         Padding(
