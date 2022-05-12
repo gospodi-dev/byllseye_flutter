@@ -35,7 +35,9 @@ class Score extends StatelessWidget {
       children: <Widget>[
         StyledButton(
           icon: Icons.refresh,
-          onPressed: () {},
+          onPressed: () {
+            onStartOver();
+          },
         ),
         Padding(
           padding: const EdgeInsets.only(left: 32.0, right: 32.0),
