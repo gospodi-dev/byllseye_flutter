@@ -30,6 +30,9 @@ class _ControlState extends State<Control> {
               inactiveTrackColor: Colors.red[700],
               trackShape: const RoundedRectSliderTrackShape(),
               trackHeight: 8.0,
+              thumbColor: Colors.redAccent,
+              overlayColor: Colors.red.withAlpha(32),
+              overlayShape: const RoundSliderOverlayShape(overlayRadius: 28.0),
             ),
             child: Slider(
               value: widget.model.current.toDouble(),
