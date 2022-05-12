@@ -26,6 +26,7 @@ import 'package:flutter/material.dart'
         runApp,
         showDialog;
 import 'package:flutter/services.dart';
+import 'package:flutter/src/widgets/basic.dart';
 import 'dart:math';
 import 'prompt.dart';
 import 'control.dart';
@@ -84,19 +85,28 @@ class _GamePageState extends State<GamePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Prompt(
-                targetValue: _model.target,
+              Padding(
+                padding: const EdgeInsets.only(top: 48.0, bottom: 32.0),
+                child: Prompt(
+                  targetValue: _model.target,
+                ),
               ),
               Control(model: _model),
-              HitMeButton(
-                  text: 'Вдарь мне!',
-                  onPressed: () {
-                    _showAlert(context);
-                  }),
-              Score(
-                totalScore: _model.totalScore,
-                round: _model.round,
-                onStartOver: _startNewGame,
+              Padding(
+                padding: const EdgeInsets.only(top: 16.0),
+                child: HitMeButton(
+                    text: 'Вдарь мне!',
+                    onPressed: () {
+                      _showAlert(context);
+                    }),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Score(
+                  totalScore: _model.totalScore,
+                  round: _model.round,
+                  onStartOver: _startNewGame,
+                ),
               ),
             ],
           ),

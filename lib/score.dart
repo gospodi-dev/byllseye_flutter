@@ -14,7 +14,6 @@ import 'package:flutter/material.dart'
         TextButton,
         VoidCallback,
         Widget;
-import 'package:flutter/src/widgets/container.dart';
 import 'text_styles.dart';
 import 'styled_button.dart';
 
@@ -41,36 +40,36 @@ class Score extends StatelessWidget {
             onStartOver();
           },
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 32.0, right: 32.0),
-          child: Column(
-            children: <Widget>[
-              Text(
-                'Рекорд:',
-                style: LabelTextStyle.bodyText1(context),
-              ),
-              Text(
-                '$totalScore',
-                style: ScoreNumberTextStyle.headline4(context),
-              ),
-            ],
-          ),
-        ),
         Expanded(
           child: Padding(
             padding: const EdgeInsets.only(left: 32.0, right: 32.0),
             child: Column(
               children: <Widget>[
                 Text(
-                  'Раунд:',
+                  'Рекорд:',
                   style: LabelTextStyle.bodyText1(context),
                 ),
                 Text(
-                  '$round',
+                  '$totalScore',
                   style: ScoreNumberTextStyle.headline4(context),
                 ),
               ],
             ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 32.0, right: 32.0),
+          child: Column(
+            children: <Widget>[
+              Text(
+                'Раунд:',
+                style: LabelTextStyle.bodyText1(context),
+              ),
+              Text(
+                '$round',
+                style: ScoreNumberTextStyle.headline4(context),
+              ),
+            ],
           ),
         ),
         StyledButton(
