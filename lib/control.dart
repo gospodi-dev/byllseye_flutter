@@ -55,6 +55,7 @@ class _ControlState extends State<Control> {
               thumbColor: Colors.redAccent,
               overlayColor: Colors.red.withAlpha(32),
               overlayShape: const RoundSliderOverlayShape(overlayRadius: 28.0),
+              thumbShape: SliderThumbImage(_sliderImage),
             ),
             child: Slider(
               value: widget.model.current.toDouble(),
