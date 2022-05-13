@@ -14,6 +14,10 @@ class Control extends StatefulWidget {
 }
 
 class _ControlState extends State<Control> {
+  ui.Image? _sliderImage;
+
+  Future<ui.Image> _load(String asset) async {}
+
   @override
   Widget build(BuildContext context) {
     return Row(
