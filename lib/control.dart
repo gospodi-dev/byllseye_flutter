@@ -20,6 +20,7 @@ class _ControlState extends State<Control> {
     final data = await rootBundle.load(asset);
     final codec = await ui.instantiateImageCodec(data.buffer.asUint8List());
     final frame = await codec.getNextFrame();
+    return frame.image;
   }
 
   @override
