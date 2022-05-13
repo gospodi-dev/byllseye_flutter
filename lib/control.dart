@@ -24,6 +24,11 @@ class _ControlState extends State<Control> {
   }
 
   @override
+  void initState() {
+    _load('images/nub.png').then((image) {});
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
