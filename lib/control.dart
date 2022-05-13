@@ -16,7 +16,10 @@ class Control extends StatefulWidget {
 class _ControlState extends State<Control> {
   ui.Image? _sliderImage;
 
-  Future<ui.Image> _load(String asset) async {}
+  Future<ui.Image> _load(String asset) async {
+    final data = await rootBundle.load(asset);
+    final codec = await ui.instantiateImageCodec(data.buffer.asUint8List());
+  }
 
   @override
   Widget build(BuildContext context) {
