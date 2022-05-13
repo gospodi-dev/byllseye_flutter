@@ -27,5 +27,14 @@ class SliderThumbImage extends SliderComponentShape {
     required double value,
     required double textScaleFactor,
     required Size sizeWithOverflow,
-  }) {}
+  }) {
+    final thumbImage = image;
+    if (thumbImage != null) {
+      final canvas = context.canvas;
+      final imageOffset = Offset(
+        center.dx - (thumbImage.width / 2),
+        center.dy - (thumbImage.height / 2),
+      );
+    }
+  }
 }
