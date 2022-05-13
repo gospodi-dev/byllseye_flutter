@@ -25,7 +25,12 @@ class _ControlState extends State<Control> {
 
   @override
   void initState() {
-    _load('images/nub.png').then((image) {});
+    _load('images/nub.png').then((image) {
+      setState(() {
+        _sliderImage = image;
+      });
+    });
+    super.initState();
   }
 
   @override
