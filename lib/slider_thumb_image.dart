@@ -35,6 +35,9 @@ class SliderThumbImage extends SliderComponentShape {
         center.dx - (thumbImage.width / 2),
         center.dy - (thumbImage.height / 2),
       );
+      var paint = Paint();
+      paint.filterQuality = FilterQuality.high;
+      canvas.drawImage(thumbImage, imageOffset, paint);
     }
   }
 }
