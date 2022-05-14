@@ -15,11 +15,14 @@ class AboutPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          const Text(
-            '☭ Точно в Цель ☭',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 32.0,
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: const Text(
+              '☭ Точно в Цель ☭',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 32.0,
+              ),
             ),
           ),
           const Text(
@@ -43,6 +46,13 @@ class AboutPage extends StatelessWidget {
               fontSize: 14.0,
             ),
           ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: ElevatedButton(
+              child: const Text('Вернуться назад!'),
+              onPressed: () {},
+            ),
+          )
         ],
       )),
     );
