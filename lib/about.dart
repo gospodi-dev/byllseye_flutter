@@ -50,7 +50,9 @@ class AboutPage extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                 child: const Text('Вернуться назад!'),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pop(context);
+                },
               ),
             )
           ],
