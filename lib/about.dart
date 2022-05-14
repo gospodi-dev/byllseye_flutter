@@ -10,6 +10,12 @@ class AboutPage extends StatelessWidget {
         title: const Text('О игре "Точно в цель"'),
         backgroundColor: Colors.red[700],
       ),
+      body: Center(
+          child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[],
+      )),
     );
   }
 }
