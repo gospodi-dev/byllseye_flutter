@@ -14,7 +14,15 @@ class AboutPage extends StatelessWidget {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.min,
-        children: <Widget>[],
+        children: <Widget>[
+          const Text(
+            '☭ Точно в цель ☭',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 32.0,
+            ),
+          ),
+        ],
       )),
     );
   }
